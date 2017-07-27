@@ -1,0 +1,8 @@
+Solids : main.o Solid.o
+	g++ -std=gnu++11 -Wall -Wextra main.o Solid.o -o Solids
+
+main.o : main.cpp Solid.h
+	g++ -std=gnu++11 -Wall -Wextra -c main.cpp
+
+Solid.o : Solid.cpp Solid.h
+	g++ -std=gnu++11 -Wall -Wextra -c Solid.cpp
